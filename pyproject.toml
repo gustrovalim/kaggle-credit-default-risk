@@ -1,0 +1,20 @@
+[project]
+name = "kaggle-credit-default-risk"
+version = "0.1.0"
+description = "Credit default risk modeling with the Home Credit dataset"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.4.6",
+    "polars>=2.0.0",
+    "scikit-learn>=1.9.1",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.6.4",
+    "pytest>=9.1.1",
+]
